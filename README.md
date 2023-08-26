@@ -1,50 +1,75 @@
-Glosario de Términos
-Entidades:
-Plataforma: Representa una plataforma de transmisión de series. Contiene la siguiente información:
+# Aplicación para Explorar Series Televisivas
 
-Nombre: Denominación de la plataforma.
-Sitio web: Página web de la plataforma.
-Planes y precios: Lista de alternativas y tarifas ofrecidas por la plataforma.
-<br>
-Serie: Representa una producción seriada para televisión. Contiene la siguiente información:
+¡Bienvenido a nuestra plataforma que te permite acceder a detalles fascinantes acerca de tus series de TV favoritas!
 
-Imagen: Representación visual de la serie.
-Nombre: Título de la serie.
-Categorías: Conjunto de géneros a los que pertenece la serie (acción, drama, romance).
-<br>
-Episodio: Representa un episodio dentro de una serie. Contiene la siguiente información:
+![Esquema](./resources/Esquema.png)
 
-Nombre: Título del episodio.
-Resumen: Resumen del episodio.
-Duración: Duración del episodio.
-<br>
-Categoría: Representa una clasificación a la cual una serie puede pertenecer. Contiene la siguiente información:
+## Glosario de Términos Esenciales
 
-Nombre: Nombre de la categoría.
-<br>
-Plan: Representa un plan ofrecido por una plataforma. Contiene la siguiente información:
+### Categorías Principales:
 
-Nombre: Nombre del plan.
-Precio: Costo del plan.
-<br>
-Director: Representa el director de una serie. Contiene la siguiente información:
+1. `Plataforma de Emisión:` Representa una plataforma de transmisión de series televisivas. Incluye los siguientes aspectos:
 
-Nombre: Nombre del director.
-Fotografía: Imagen que retrata al director.
-Descripción: Descripción del director.
-Series dirigidas: Lista de series en las que ha participado como director.
-<br>
-Actor: Representa un actor dentro de una serie. Contiene la siguiente información:
+   + Denominación: Nombre distintivo de la plataforma.
+   + Portal en línea: Sitio web oficial de la plataforma.
+   + Alternativas de Suscripción: Desglose completo de planes y sus tarifas.
 
-Nombre: Nombre del actor.
-Fotografía: Imagen que muestra al actor.
-Descripción: Descripción del actor.
-Series en las que ha actuado: Lista de series en las que ha participado como actor.
-<br>
-Relaciones:
-Plataforma - Plan: Una plataforma ofrece múltiples planes. (Relación de "uno a muchos") - Composición
-Plataforma - Serie: Una plataforma puede ofrecer varias series. (Relación de "uno a muchos") - Agregación
-Serie - Categoría: Una serie puede pertenecer a múltiples categorías. (Relación de "muchos a muchos") - Asociación
-Serie - Episodio: Una serie se compone de varios episodios. (Relación de "uno a muchos") - Composición
-Director - Serie: Un director puede dirigir una o varias series, y una serie puede tener uno o varios directores. (Relación de "muchos a muchos") - Agregación
-Actor - Serie: Un actor puede participar en una o varias series, y una serie puede tener uno o varios actores. (Relación de "muchos a muchos") - Agregación
+   <br>
+
+2. `Programa Televisivo:` Hace referencia a una serie de TV intrigante. Contempla las características siguientes:
+
+   + Fotografía Visual: Representación gráfica emblemática de la serie.
+   + Título: Denominación del programa televisivo.
+   + Clasificaciones: Gama de categorías a las cuales se adscribe la serie (#acción, #drama, #romance).
+
+   <br>
+   
+3. `Instancia Episódica:` Describe un episodio singular dentro de una serie. Detalles considerados:
+
+   + Título: Denominación del episodio en cuestión.
+   + Sinopsis: Breve descripción del episodio.
+   + Extensión Temporal: Duración cronometrada del episodio.
+
+   <br>
+
+4. `Género de Referencia:` Se refiere a una categoría vinculada a una serie. Único atributo:
+
+   + Denominación: Título correspondiente al género.
+
+   <br>
+
+5. `Régimen de Elección:` Designa un esquema presentado por una plataforma. Aspectos contabilizados:
+
+   + Título: Identificación del plan específico.
+   + Costo: Monto financiero asociado al plan.
+
+   <br>
+
+6. `Director Creativo:` Se relaciona con el director de una serie televisiva. Asuntos destacados:
+
+   + Denominación: Nombre característico del director.
+   + Fotografía Destacada: Imagen representativa del director.
+   + Descripción: Breve narrativa acerca del director.
+   + Historial de Dirección: Enumeración de series en las que ha desempeñado ese rol.
+
+   <br>
+
+7. `Intérprete en Escena:` Encarna a un actor o actriz dentro de una serie. Detalles resaltados:
+
+   + Denominación: Nombre propio del intérprete.
+   + Fotografía Destacada: Imagen que personifica al intérprete.
+   + Perfil Descriptivo: Breve retrato descriptivo del intérprete.
+   + Historial Actoral: Listado de series en las que ha participado.
+
+   <br>
+
+### Conexiones de Interés:
+
+---
+
++ **`Plataforma - Alternativas de Suscripción:`** Una plataforma ofrece múltiples opciones de suscripción. (Enlace de "uno a varios") Integración
++ `Plataforma - Programa Televisivo:` Una plataforma tiene la capacidad de presentar varias series. (Enlace de "uno a varios") Incorporación
++ `Programa Televisivo - Clasificación:` Una serie puede alinearse con diversas categorías. (Enlace de "varios a varios") Asociación
++ `Programa Televisivo - Instancia Episódica:` Una serie incluye múltiples episodios. (Enlace de "uno a varios") Incorporación
++ `Director Creativo - Programa Televisivo:` Un director puede dirigir una o varias series, y una serie puede involucrar uno o varios directores. (Enlace de "varios a varios") Incorporación
++ `Intérprete en Escena - Programa Televisivo:` Un intérprete puede participar en una o varias series, y una serie puede presentar uno o varios intérpretes. (Enlace de "varios a varios") Incorporación
