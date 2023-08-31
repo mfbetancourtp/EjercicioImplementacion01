@@ -2,7 +2,7 @@
 
 ¡Bienvenido a nuestra plataforma que te permite acceder a detalles fascinantes acerca de tus series de TV favoritas!
 
-![Esquema](./resources/Diagrama.png)
+/*![Esquema](./resources/Diagrama.png)*/
 
 ## Glosario de Términos Esenciales
 
